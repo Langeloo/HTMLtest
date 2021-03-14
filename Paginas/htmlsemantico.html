@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo HTML semantico</title>
+        <link rel="icon" href="html5.ico"> <!--Esta etiqueta se isa para poner el icono de la pagina-->
+    </head>
+    <body>
+        <header> <!--Encabezado de la pagina.-->
+            <nav> <!--Barra de navegacion que nos lleva a diferentes partes de la pagina.-->
+                <ul>
+                    <li><a href="htmlsemantico.html">Inicio</a></li>
+                    <li><a href="micuenta.html">Mi cuenta</a></li>
+                    <li><a href="mas.html">Mas sobre mi</a></li>
+                    <li><a href="#sigueme">Sigueme</a></li> <!--Line 57 attribute id-->
+                    <li><a href="../index.html">Index principal</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article><!--Es la seccion principal de la pagina-->
+            <section><!--Crea una seccion dentro de article-->
+                <h1><b>Titulo de biografia</b></h1>
+                <h2>Subtitulo de biografia</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt harum molestias iusto corrupti animi rerum inventore rem delectus praesentium, accusamus doloribus, vero at quasi nobis ea quisquam quis? Sapiente, exercitationem.</p>
+                <table><!--Sirven para agrupar datos de un mismo tipo por columnas--> <!--Border es una propiedad a la que se le envia unidades de pixeles, es mejor hacerlo con CSS border="1"-->
+                    <tr><!--Sirve para definir las filas-->
+                        <td><center><b>Nombre</b></center></td> <!--El center dentro de las tablas centran el contenido dentro de la caja de la tabla. Se recomienda usar no usar el center, todo con css-->
+                        <td><center><b>Apellido</b></center></td>
+                        <td><center><b>ID</b></center></td>
+                        <td><center><b>Mail</b></center></td>
+                    </tr>
+                    <tr><!--Sirve para definir las filas-->
+                        <td>Miguel</td>
+                        <td>Ramirez</td>
+                        <td>1003751809</td>
+                        <td>migueramirez02.2@gmail.com</td>
+                    </tr>
+                    <tr><!--Sirve para definir las filas-->
+                        <td>David</td>
+                        <td>Sierra</td>
+                        <td>10... almo mas de numeros</td>
+                        <td>nosecomoes@gmail.com</td>
+                    </tr>
+                </table>
+                <center> <!--La etiqueta center se encarga de centrar todo el contenido que este dentro de ella.-->
+                <img src="https://i.ytimg.com/vi/C7M8z4d2ifY/maxresdefault.jpg" alt="Imagen random qe dice Brutal" title="Pikachu brutal"> <!--El alt es fundamental para el buscador e indexado, le pone un titulo en caso de que la imagen no cargue. En title se le pone el texto que aparecera cuando pongamos el cursor sobre la imagen.-->
+                </center>
+            </section>
+        </article>
+        <aside> <!--Aside se usa para poner contenidos secundarios o recomendados en la pagina.-->
+            <h2><b>Contenido extra</b></h2>
+        </aside>
+        <footer><!--Pide de pagina-->
+            <center>
+                <h4><i>Copyright - Todos los derechos redervados.t</i></h4>
+                <br><br>
+                <p id="sigueme">Sigueme:</p><br> <!--El atributo id se usa como identificador de una etiqueta especifica, que nos redireccionara a ella-->
+                <a href="https://www.facebook.com/miguelangel.ramirezbonilla.1" target="_blank"><b>Facebook</b></a>
+                <a href="https://www.instagram.com/langeloo_/" target="_blank"><b>Instagram</b></a>
+                <a href="https://twitter.com/migueramirez02" target="_blank"><b>Twitter</b></a>
+            </center>
+        </footer>
+    </body>
+</html>

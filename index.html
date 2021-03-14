@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+    Observaciones:
+
+        El objetivo de este lenguaje (HTML) es darle estructura a un stio web, no darle o mejorar el aspecto visual, eso se hace cen CSS y demas lenguajes que hay que aprender.
+-->
+<html>
+<head>
+    
+    <title>Primera pagina web</title>
+    <link rel="icon" href="Paginas/index.ico">
+    <meta charset="UTF-8"> <!--UTF-8 es para poder poner caracteres especiales, charset significa conjunto de caracteres-->
+    <!--Tipos de <meta>-->
+    <meta name="keywords" content="Harina,leche,huevos,comida,galletas"> <!--El contenido es como agregar etiquetas para que los busccadores den con nuestra pagina primero, en este caso el nombre es eywords o palabras clave.-->
+    <meta name="description" content="Esta es una prueba de los metadatos para dar una descripcion de mi pagina."> <!--Aqui se agrega una descripcion de mi pagina.-->
+    <meta name="author" content="Langeloo"> <!-- Aqui se pone el nombre del autor de la pagina-->
+    <meta name="copyright" content="Langeloo S.A."> <!--Si la pagina tiene algun tipo de derechos de autor se pone el nombre de la organizacion propietaria.-->
+    <meta name="robots" content="index"> <!--Le decimos si la pagina debe ser indexada o no, osea esta en un indice. Para el caso de que la pagina no este indexada se pone content="noindex"-->
+
+</head>
+<body>
+    <!--etiquetas -->
+    <h1>Hello, World</h1> <!--Etiqueta para el titulo del h1 al h6--->
+    <h2>Hello, World</h2>
+    <h3>Hello, World</h3>
+    <h4>Hello, World</h4>
+    <h5>Hello, World</h5>
+    <h6>Hello, World</h6>
+    <p> <!--parrafo-->
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> <br><!--La etiqueta <br> funciona como un salto de linea o completa el espacio de la linea--> Sed officia vitae architecto! Quo obcaecati adipisci ratione ducimus quis. Fuga saepe id quod excepturi! Facere accusantium cupiditate reprehenderit porro ad totam?
+
+    </p> 
+    <b>Negrllla</b>
+    <i>Italica</i>
+    <strike>Tachada</strike>
+    <small>Pequeña</small>
+    <br>
+    <p><a href="Paginas/pagina_2.html">Click aqui</a> <!-- Etiqueta que nos redirige--> para ingresar a la segunda pagina de prueba</p>
+
+    <p>Enlace para ingresar a <a href="https://google.com" target="_blank"><i>google.com</i></a> en una nueva pestaña.</p> <!--Se pone target="_blank se usa para abrir un enlace en otra pestaña."-->
+
+    <h2>Lista de compras para el supermercado.</h2>
+    <!--Listas-->
+    <ul> <!---Listas desordenadas-->
+        <li>Leche</li> <!--Elementos de la lista-->
+        <li>Harina</li>
+        <li>huevos</li>
+        <li>Papas</li>
+        <li>Arroz</li>
+        <li>Piña</li>
+    </ul>
+    <ol> <!--Lista ordenada (Que ennumera los elementos de la lista.)-->
+        <li>Leche</li> <!--Elementos de la lista-->
+        <li>Harina</li>
+        <li>huevos</li>
+        <li>Papas</li>
+        <li>Arroz</li>
+    </ol>
+
+    <!--Multimedia-->
+
+    <!--Mostrar una imagen-->
+    <h2>Mi primera imagen en html</h2>
+    <p>Aqui va la anhelada <b>IMAGEN:</b></p>
+
+    <img src="https://blog.hubspot.es/hubfs/como-hacer-una-pagina-web-en-html.jpg">  <!--Etiqueta para poner imagenes desde internet-->
+    <img src="html.jpg" width="300" height="500">  <!--Etiqueta para poner imagenes localmente-->
+    <!--Si se va a usar CSS no se debe definir el tamanio desde html-->
+<br>
+    <!--Poner un video-->
+    <video src="blob:https://www.youtube.com/70ef50a2-cefc-453b-ac6d-277a9f32556b" controls>
+
+    </video>
+<br>
+    <!--Poner un audio-->
+    <audio src="blob:https://www.youtube.com/70ef50a2-cefc-453b-ac6d-277a9f32556b" controls>
+
+    </audio>
+
+    <!--Funcionamiento de un <div></div> -->
+
+    <div></div> <!--Es para separar y agrupar contenidos-->
+<!--Formularios-->
+
+    <form> <!--Etiquetas para formularios-->
+        <input type="text" name="nombre" > <!--El atributo name nombra con lo que hay dentro de el al dato que se introduzca, como si asi se llamara la variable-->
+        <input type="password" name="password">
+        <input type="number" required=""> <!--El atributo required obliga a que el campo debe ser llenado-->
+        <input type="email" value="miguelittoramirez@gmail.com"> <!--Value es el valor de la propuedad, lo que se escriba dentro del campo es el valor-->
+        <input type="color">
+        <input type="range" min="10" max="100"> <!--Nos deja elegir rangos de numeros-->
+        <input type="date"> <!--recibe valores de fecha-->
+        <input type="time"> <!--Recibe valores de hora-->
+        <input type="button" value="Boton"> <!--Boton -->
+        <input type="submit"> <!--Boton para enviar los datos,los datos llegan a un servidor-->
+        <textarea></textarea> <!--Sirve para crear un area en donde escribir-->
+        <br>
+        <textarea readonly>Hola como estas xdxdxd</textarea> <!--El readonly significa que solo podremos leer lo del campo de texto-->
+    </form>
+
+    <!--Metadatos-->
+    <!--Los metadatos es la informacion que escribe datos-->
+    <!--La etiqueta meta se pone en el head-->
+
+    <!--HTML semantico-->
+    <!--Forma adecuada de escribir paginas en HTML.-->
+
+    <p><a href="Paginas/htmlsemantico.html"> <b>Pagina</b> </a> que nos redirige al HTML semantico.</p>
+
+</body>
+</html>
